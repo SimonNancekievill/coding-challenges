@@ -3,5 +3,7 @@
   "5kyu": [],
   "6kyu": [],
   "7kyu": [],
-  "8kyu": []
+  "8kyu": [
+    "remove-first-and-last-character"
+  ]
 }
