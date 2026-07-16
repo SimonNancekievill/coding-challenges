@@ -5,6 +5,7 @@
   "7kyu": [],
   "8kyu": [
     "remove-first-and-last-character",
-    "return-the-day"
+    "return-the-day",
+    "counting-monkeys"
   ]
 }
