@@ -12,9 +12,6 @@ function monkeyCount(n: number): number[] {
   // your code here
   const numbers: string = n.toString();
   for (let number of numbers) {
-   while n >= 1
-    print(n)
-    n -= 1
   }
   return [];
 }
