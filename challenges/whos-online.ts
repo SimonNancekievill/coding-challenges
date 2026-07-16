@@ -16,29 +16,39 @@ const persons: Person[] = [
     lastActivity: 22,
   },
   {
+    username: "Marco",
+    status: "online",
+    lastActivity: 2,
+  },
+  {
+    username: "Simon",
+    status: "online",
+    lastActivity: 52,
+  },
+  {
     username: "Bob",
     status: "online",
     lastActivity: 104,
   },
 ];
 
-function Status() {
-  let overview = {};
-
-  const online = persons.map((person) => {
+function Status(persons: Person[]) {
+  const overview: { [key: string]: string[] } = {
+    online: [],
+    offline: [],
+    away: [],
+  };
+  persons.forEach((person) => {
     if (person.status === "online" && person.lastActivity <= 10) {
-      return (overview = {
-        online: [`${person.username}`],
-      });
+      return overview?.online?.push(person.username);
     }
     if (person.status === "online" && person.lastActivity > 10) {
-      return (overview = {
-        away: [`${person.username}`],
-      });
+      return overview?.away?.push(person.username);
     } else {
-      return (overview = {
-        offline: [`${person.username}`],
-      });
+      return overview?.offline?.push(person.username);
     }
   });
+  return console.log(overview);
 }
+
+Status(persons);
