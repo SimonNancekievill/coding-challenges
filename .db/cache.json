@@ -4,6 +4,7 @@
   "6kyu": [],
   "7kyu": [],
   "8kyu": [
-    "remove-first-and-last-character"
+    "remove-first-and-last-character",
+    "return-the-day"
   ]
 }
