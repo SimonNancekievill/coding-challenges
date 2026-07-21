@@ -10,9 +10,9 @@ import { test } from "@/test.ts";
 
 function monkeyCount(n: number): number[] {
   // your code here
-  const numbers: string = n.toString();
-  for (let number of numbers) {
-  }
+  let count: number[] = [];
+
+  for 
   return [];
 }
 
